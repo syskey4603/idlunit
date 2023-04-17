@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>English to Hindi Translator</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="speak.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_API_KEY"></script>
+  </head>
+  <body>
+    <audio id="hello" src="namaste.mp3"></audio>
+    <audio id="goodmorning" src="Shup_brabhat.mp3"></audio>
+    <audio id="hello" src="namaste.mp3"></audio>
+    <audio id="thankyou" src="dhanyavaad.mp3"></audio>
+    <audio id="mynameis" src="namaste_mera_naam.mp3"></audio>
+    <audio id="restraunt" src="bhojanaalay.mp4"></audio>
+    <audio id="food" src="khaana.mp4"></audio>
+    <audio id="water" src="paani.mp4"></audio>
+    <audio id="drinks" src="pey_padarth.mp4"></audio>
+    <audio id="menu" src="menu_mei_kya_hai.mp4"></audio>
+    <audio id="left" src="baen.m4a"></audio>
+    <audio id="right" src="Daen.m4a"></audio>
+    <audio id="straight" src="Seedha.m4a"></audio>
+    <audio id="back" src="Peeche.m4a"></audio>
+    <audio id="leftorright" src="Sentence.m4a"></audio>
+    <audio id="10" src="das.m4a"></audio>
+    <audio id="20" src="bees.m4a"></audio>
+    <audio id="30" src="thees.m4a"></audio>
+    <audio id="40" src="Chalees.m4a"></audio>
+    <audio id="50" src="pachaas.m4a"></audio>
+    <audio id="60" src="saat.m4a"></audio>
+    <audio id="70" src="sathar.m4a"></audio>
+    <audio id="80" src="Asee.m4a"></audio>
+    <audio id="90" src="Nabey.m4a"></audio>
+    <audio id="100" src="Ek_saw.m4a"></audio>
+
+
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="translate.html">Translate</a></li>
+          <li><a href="dictionary.html">dictionary</a></li>
+        </ul>
+      </nav>
+    <header>
+      <h1>English to Hindi Audio dictionary</h1>
+    </header>
+    <section id="greetings" class="section">
+      <h2>Greetings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>English</th>
+            <th>Hindi</th>
+            <th>Speak</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hello</td>
+            <td>नमस्ते</td>
+            <td><button class="speak-button" data-word="Hello" onclick="javascript:sayword('hello')">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Good morning</td>
+            <td>शुभ प्रभात</td>
+            <td><button class="speak-button" data-word="Good morning" onclick="javascript:sayword('goodmorning')">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Thank you</td>
+            <td>धन्यवाद</td>
+            <td><button class="speak-button" data-word="Thank you" onclick="javascript:sayword('thankyou')">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Hi my name is (your name)</td>
+            <td>नमस्ते मेरा नाम</td>
+            <td><button class="speak-button" data-word="Hello" onclick="javascript:sayword('mynameis')">Speak</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="restaurant" class="section">
+      <h2>Restaurant</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>English</th>
+            <th>Hindi</th>
+            <th>Speak</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Restaurant</td>
+            <td>भोजनालय</td>
+            <td><button class="speak-button" data-word="Red" onclick="javascript:sayword('restraunt');">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Food</td>
+            <td>खाना</td>
+            <td><button class="speak-button" data-word="Green" onclick="javascript:sayword('food');">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td>पानी</td>
+            <td><button class="speak-button" data-word="Blue" onclick="javascript:sayword('water');">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Beverages</td>
+            <td>पेय पदार्थ</td>
+            <td><button class="speak-button" data-word="Blue" onclick="javascript:sayword('drinks');">Speak</button></td>
+          </tr>
+          <tr>
+            <td>What is on the menu?</td>
+            <td>मेनू में क्या है</td>
+            <td><button class="speak-button" data-word="Blue" onclick="javascript:sayword('menu');">Speak</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="navigation" class="section">
+      <h2>Navigation</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>English</th>
+            <th>Hindi</th>
+            <th>Speak</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Left</td>
+            <td>बाएं</td>
+            <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('left');">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Right</td>
+            <td>दाईं</td>
+            <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('right');">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Straight</td>
+            <td>सीधा</td>
+            <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('straight');">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Back</td>
+            <td>पीछे</td>
+            <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('back');">Speak</button></td>
+          </tr>
+          <tr>
+            <td>Do we have to go left or right?</td>
+            <td>क्या हमें दाएं जाना है या बाएं जाना है</td>
+            <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('leftorright');">Speak</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+          <section id="Numbers" class="section">
+            <h2>Numbers</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>English</th>
+                  <th>Hindi</th>
+                  <th>Speak</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10</td>
+                  <td>दस</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('10');">Speak</button></td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>बीस</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('20');">Speak</button></td>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td>तीस</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('20');">Speak</button></td>
+                </tr>
+                <tr>
+                  <td>40</td>
+                  <td>चालीस</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('40');">Speak</button></td>
+                </tr>
+                <tr>
+                  <td>50</td>
+                  <td>पचास</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('50');">Speak</button></td>
+                </tr>
+                <tr>
+                  <td>60</td>
+                  <td>साठ</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('60');">Speak</button></td>
+                </tr>
+                <tr>
+                  <td>70</td>
+                  <td>सत्तर</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('70');">Speak</button></td>
+                </tr>
+                <tr>
+                  <td>80</td>
+                  <td>अस्सी</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('80');">Speak</button></td>
+                </tr>
+                <tr>
+                  <td>90</td>
+                  <td>नब्बे</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('90');">Speak</button></td>
+                </tr>
+                <tr>
+                  <td>100</td>
+                  <td>एक सौ</td>
+                  <td><button class="speak-button" data-word="Apple" onclick="javascript:sayword('100');">Speak</button></td>
+                </tr>
+
+          
+          
+           
